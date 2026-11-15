@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: luna
+    runtime: node
+    plan: free
+    buildCommand: echo ok
+    startCommand: node server.js
+    envVars:
+      - key: PASS
+        sync: false
